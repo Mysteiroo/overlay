@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream Overlay</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background-color: #000;
+            color: #fff;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        .top-bar, .bottom-bar {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            line-height: 50px;
+        }
+        .top-bar {
+            top: 0;
+        }
+        .bottom-bar {
+            bottom: 0;
+        }
+        .camera-frame {
+            position: absolute;
+            top: 60px;
+            left: 20px;
+            width: 300px;
+            height: 200px;
+            border: 2px solid #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="top-bar">Top bar - Stream Title or Info</div>
+        <div class="bottom-bar">Bottom bar - Latest Subscriber, Donation etc.</div>
+        <div class="camera-frame">Camera Frame</div>
+    </div>
+</body>
+</html>
